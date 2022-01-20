@@ -3,7 +3,7 @@ using static CoffeeMachine.Entities.Abstract.IDrink;
 
 namespace CoffeeMachine.Entities
 {
-    public class Cuppaccino: IDrink
+    public class Cuppaccino : IDrink
     {
         private uint _milkCount = 3;
 
@@ -11,7 +11,8 @@ namespace CoffeeMachine.Entities
 
         public uint MilkCount
         {
-            get {
+            get
+            {
                 return _milkCount;
             }
             set
@@ -23,18 +24,7 @@ namespace CoffeeMachine.Entities
 
         public uint BeanCount => 5;
 
-        public uint SugarCount
-        {
-            get 
-            {
-                return SugarCount;
-            }
-            set 
-            {
-                if(value > 0)
-                    SugarCount = value;
-            }
-        }
+        public uint SugarCount { get; set; }
 
         public string Name => DrinkName.Cuppaccino.ToString();
     }
