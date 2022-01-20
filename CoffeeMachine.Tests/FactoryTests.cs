@@ -14,8 +14,8 @@ namespace CoffeeMachine.Tests
             //Arrange
             DrinkFactory factory = new DrinkFactory(DrinkName.Coffee);
 
-            int noOfBeans = 2;
-            int noOfMilk = 0;
+            uint noOfBeans = 2;
+            uint noOfMilk = 0;
             bool allowSugar = false;
 
             //Act
@@ -37,8 +37,8 @@ namespace CoffeeMachine.Tests
             //Arrange
             DrinkFactory factory = new DrinkFactory(DrinkName.Cuppaccino);
 
-            int noOfBeans = 5;
-            int noOfMilk = 3;
+            uint noOfBeans = 5;
+            uint noOfMilk = 3;
             bool allowSugar = true;
 
             //Act
@@ -60,8 +60,8 @@ namespace CoffeeMachine.Tests
             //Arrange
             DrinkFactory factory = new DrinkFactory(DrinkName.Latte);
 
-            int noOfBeans = 3;
-            int noOfMilk = 2;
+            uint noOfBeans = 3;
+            uint noOfMilk = 2;
             bool allowSugar = false;
 
             //Act
