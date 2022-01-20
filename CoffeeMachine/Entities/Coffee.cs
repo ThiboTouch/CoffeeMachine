@@ -16,7 +16,7 @@ namespace CoffeeMachine.Entities
             }
             set
             {
-                if (!(value > 1 || value < 0))
+                if (value == 1 || value == 0)
                     _milkCount = value;
             }
         }
